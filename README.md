@@ -90,8 +90,16 @@ See you can add any style to your own project. These are only ideas.
 
 # Usage
 
-> put your code here
+1. Open the projec directory and run (requires pipenv):
+```bash
+pipenv install -r requirements.txt
+```
+this should create a new virtual environment and install all of the dependencies needed to run the app in it. 
 
+2. To run the app locally:
+```bash
+pipenv run bio.py
+```
 
 # Extras:
 - You can **add** any other attribute you like in order to add more functionalities.
