@@ -19,7 +19,13 @@ links:
     enable: False
     link: "https://www.last.fm/user/Juanjelgueta"
     description: "Do you wanna know what i'm listeinig to?"
-  
+
+  linkedin:
+    enable: False
+    link: "https://gt.linkedin.com/in/juan-jos%C3%A9-elgueta-299ab3168"
+    description: "Add me to your professional network"
+
+    
   email: 
     enable: False
     link: "mailto: elguetaj@ufm.com"
