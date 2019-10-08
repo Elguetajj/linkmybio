@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='acrylic.css') }}">
+    
+    {% if title %}
+        <title>FlaskyCV - {{title}} </title>
+    {% else %}
+        <title>FlaskyCV - {{title}} </title>
+    {% endif %}
+
+    
+</head>
+<body> 
+    
+    <div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">¿Quién soy?</h1>
+                <hr class="my-4">
+                <h3 class="display-4">Contacto</h3>
+                <button type="button" id='fb' class="btn btn-fb btn-outline-dark"><i class="fab fa-facebook-f pr-1 "></i> Facebook</button>
+                <button type="button" id='insta' class="btn btn-ins btn-outline-dark"><i class="fab fa-instagram pr-1"></i> Instagram</button>
+                <button type="button" id= 'git' class="btn btn-git btn-outline-dark"><i class="fab fa-github pr-1"></i> Github</button>
+                <button type="button" id='email' class="btn btn-email btn-outline-dark"><i class="fas fa-envelope pr-1"></i> Email</button>
+                <script type="text/javascript">
+                    document.getElementById("fb").onclick = function () {
+                    location.href = "https://www.facebook.com/juanjose.elgueta";
+                    };
+                    document.getElementById("insta").onclick = function () {
+                    location.href = "https://www.instagram.com/elguetajj/?hl=af";
+                    };
+                    document.getElementById("git").onclick = function () {
+                    location.href = "https://github.com/Elguetajj";
+                    };
+                    document.getElementById("email").onclick = function () {
+                        location.href = "mailto: elguetaj@ufm.com";
+                    };
+                </script>
+            </div>
+        </div>   
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+</html>
