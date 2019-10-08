@@ -3,5 +3,6 @@
         "activityBar.background": "#013615",
         "titleBar.activeBackground": "#024B1E",
         "titleBar.activeForeground": "#ECFFF3"
-    }
+    },
+    "python.pythonPath": "C:\\Users\\ELGUETA\\.virtualenvs\\linkmybio-uGFop0MJ\\Scripts\\python.exe"
 }
