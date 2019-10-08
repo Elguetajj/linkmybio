@@ -14,44 +14,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='acrylic.css') }}">
-    
-    {% if title %}
-        <title>FlaskyCV - {{title}} </title>
-    {% else %}
-        <title>FlaskyCV - {{title}} </title>
-    {% endif %}
-
+    <title>JJE🐈</title>
     
 </head>
 <body> 
     
-    <div>
-        <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="acrylic shadow top-buffer">
             <div class="container">
-                <h1 class="display-4">¿Quién soy?</h1>
+                <div class="center">
+                    <img src="{{url_for('static', filename='yo1.jpg')}}">
+                </div>
+                <h1 class="display-2" style="text-align: center">{{data.me.name}}</h1>
+                <p class="lead" style="text-align: center"> {{data.me.bio}} </p>
                 <hr class="my-4">
-                <h3 class="display-4">Contacto</h3>
-                <button type="button" id='fb' class="btn btn-fb btn-outline-dark"><i class="fab fa-facebook-f pr-1 "></i> Facebook</button>
-                <button type="button" id='insta' class="btn btn-ins btn-outline-dark"><i class="fab fa-instagram pr-1"></i> Instagram</button>
-                <button type="button" id= 'git' class="btn btn-git btn-outline-dark"><i class="fab fa-github pr-1"></i> Github</button>
-                <button type="button" id='email' class="btn btn-email btn-outline-dark"><i class="fas fa-envelope pr-1"></i> Email</button>
-                <script type="text/javascript">
+                <button type="button" id='fb' class="btn btn-fb btn-outline-dark center"><i class="fab fa-facebook-f pr-1 "></i> Facebook</button>
+                <button type="button" id='insta' class="btn btn-ins btn-outline-dark center"><i class="fab fa-instagram pr-1"></i> Instagram</button>
+                <button type="button" id= 'git' class="btn btn-git btn-outline-dark center"><i class="fab fa-github pr-1"></i> Github</button>
+                <button type="button" id= 'lastfm' class="btn btn-git btn-outline-dark center"><i class="fab fa-lastfm pr-1"></i> LastFM</button>
+                <button type="button" id='email' class="btn btn-email btn-outline-dark center" ><i class="fas fa-envelope pr-1"></i> Email</button>
+               
+                <script>
+
                     document.getElementById("fb").onclick = function () {
-                    location.href = "https://www.facebook.com/juanjose.elgueta";
+                    location.href = '{{ data.links.facebook.link }}' ;
                     };
                     document.getElementById("insta").onclick = function () {
-                    location.href = "https://www.instagram.com/elguetajj/?hl=af";
+                    location.href = '{{ data.links.instagram.link }}';
                     };
                     document.getElementById("git").onclick = function () {
-                    location.href = "https://github.com/Elguetajj";
+                    location.href = '{{ data.links.github.link }}';
                     };
+                    document.getElementById("git").onclick = function () {
+                        location.href = '{{ data.links.lastfm.link }}';
+                        };
                     document.getElementById("email").onclick = function () {
-                        location.href = "mailto: elguetaj@ufm.com";
+                        location.href = '{{ data.links.email.link }}';
                     };
                 </script>
             </div>
         </div>   
     </div>
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

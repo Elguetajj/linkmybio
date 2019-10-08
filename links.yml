@@ -1,0 +1,26 @@
+me:
+  name: Juan José Elgueta
+  bio: Soy estudiante de Computer Science 👨‍💻, me gustan los animales (en especial los gatos 🐱), me encanta el arte, principalmente la música 🎸 y el cine 🎬. 
+
+links:
+  facebook:
+    enable: True
+    link: "https://www.facebook.com/juanjose.elgueta"
+    description: "check my facebook"
+  instagram:
+    enable: True
+    link: "https://www.instagram.com/elguetajj/?hl=af"
+    description: "How Cool my photos are in instagram :camera:"
+  github:
+    enable: False
+    link: "https://github.com/Elguetajj"
+    description: "This is where I host my CS projects"
+  lastfm:
+    enable: False
+    link: "https://www.last.fm/user/Juanjelgueta"
+    description: "Do you wanna know what i'm listeinig to?"
+  
+  email: 
+    enable: False
+    link: "mailto: elguetaj@ufm.com"
+    description: "If you need to contact me send me an email (send me pictures of your cat please)"

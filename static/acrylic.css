@@ -63,4 +63,13 @@ opacity: 0.7;
   margin-right: auto;
   width: 50%;
 }
-.top-buffer { margin-top:20px; }
+.top-buffer { margin-top:50px; }
+
+.imgcontainer{
+  display: block;
+  margin-right: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top:-10%;
+}
+ 
